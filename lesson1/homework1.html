@@ -7,16 +7,44 @@
     <body>
         <script>
             alert("Отгадай 5 загадок");
-            var ansver = prompt("Зимой и летом одним цветом?");
-            var correctAnsverCount = 0;
-            if(ansver == "ёлка" || ansver == "елка"){
-                alert("Правильно");
-                correctAnsverCount++;
+            var answer = prompt("Зимой и летом одним цветом?");
+            var correctAnswerCount = 0;
+            if(answer == "ёлка" || answer == "елка"){
+                alert("Правильно!");
+                correctAnswerCount++;
                 }else{
                     alert("Неправильно(");
                 }
+            var answer = prompt("Два кольца два конца посередине гвоздик?");
+            if(answer == "Ножницы" || answer == "ножницы"){
+                alert("Правильно!");
+                correctAnswerCount++;
+            }else{
+                alert("Неправильно(");
+            }
+            var answer = prompt("Что на свете всех мягче?");
+            if(answer == "Ладонь" || answer == "ладонь"){
+                alert("Верно!");
+                correctAnswerCount++;
+            }else{
+                alert("Неправильно(");
+            }
+            var answer = prompt("Что на свете всех жиренее?");
+            if(answer == "Земля" || answer == "земля"){
+                alert("Верно!");
+                correctAnswerCount++;
+            }else{
+                alert("Неверно(");
+            }
+            var answer = prompt("Что на свете всех быстрее?");
+            if(answer == "Мысль" || answer == "мысль"){
+                alert("Правильно");
+                correctAnswerCount++;
+            }else{
+                alert("Неправильно(");
+            }
             
-            
+            alert("Правильных ответов " + correctAnswerCount);
         </script>
     </body>
 </html>
