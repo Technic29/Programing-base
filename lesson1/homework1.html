@@ -7,37 +7,42 @@
     <body>
         <script>
             alert("Отгадай 5 загадок");
-            var answer = prompt("Зимой и летом одним цветом?");
             var correctAnswerCount = 0;
-            if(answer == "ёлка" || answer == "елка"){
+            var answer = prompt("Зимой и летом одним цветом?");
+            answer = answer.toLowerCase(); //Приволит к нижнему регистру
+            if(answer == "ёлка" || answer == "елка" || answer == "ель"){
                 alert("Правильно!");
                 correctAnswerCount++;
                 }else{
                     alert("Неправильно(");
                 }
             var answer = prompt("Два кольца два конца посередине гвоздик?");
-            if(answer == "Ножницы" || answer == "ножницы"){
+            answer = toLowerCase();
+            if(answer == "ножницы"){
                 alert("Правильно!");
                 correctAnswerCount++;
             }else{
                 alert("Неправильно(");
             }
             var answer = prompt("Что на свете всех мягче?");
-            if(answer == "Ладонь" || answer == "ладонь"){
+            answer = toLowerCase();
+            if(answer == "ладонь"){
                 alert("Верно!");
                 correctAnswerCount++;
             }else{
                 alert("Неправильно(");
             }
             var answer = prompt("Что на свете всех жиренее?");
-            if(answer == "Земля" || answer == "земля"){
+            answer = toLowerCase();
+            if(answer == "земля"){
                 alert("Верно!");
                 correctAnswerCount++;
             }else{
                 alert("Неверно(");
             }
             var answer = prompt("Что на свете всех быстрее?");
-            if(answer == "Мысль" || answer == "мысль"){
+            answer = toLowerCase();
+            if(answer == "мысль"){
                 alert("Правильно");
                 correctAnswerCount++;
             }else{
