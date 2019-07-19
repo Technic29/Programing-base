@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var answer = parseInt(Math.random() * 100);
+            var counter = 0;
+            while (true) {
+                counter++;
+                var userAnswer = prompt("Введите число от 0 до 100," +
+                      "\nЕсли захотите выйти нажмите q.");
+                if(userAnswer == "q"){
+                    break;
+                }
+
+                userAnswer = parseInt(userAnswer);
+                
+                if(userAnswer > answer) {
+                    alert("Сликом много");
+                }else if(userAnswer < answer){
+                    alert("Слишком мало");
+                }else if(userAnswer == answer) {
+                    alert("Вы угдали!");
+                    break;
+                }else{
+                    alert("Введите число");
+                }
+
+                alert("Вы огадали с " + counter + "попытки.");
+           } 
+        </script>
+    </body>
+</html>
