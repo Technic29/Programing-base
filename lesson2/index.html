@@ -6,7 +6,7 @@
     </head>
     <body>
         <script>
-            var i = 0;
+            /*var i = 0;
             while(i < 4){
                 alert("Zig Hi");
                 i++;
@@ -30,7 +30,14 @@
                 sum = sum + i;
                 i++;
             }
-            alert(sum);
+            alert(sum);*/
+            var vklad = +prompt("Введите сумму вклада");
+            var proc = +prompt("Ввелите ваш ежегодный процент");
+            var procYear = parseInt(vklad + 5 / 100);
+            for(i = 1; i <= 5; i++){
+                sum = vklad + procYear * i;
+                alert(sum)
+            }
         </script>
     </body>
 </html>
