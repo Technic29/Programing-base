@@ -7,15 +7,17 @@
     <body>
         <script>
             var answer = parseInt(Math.random() * 100);
+            var attempt = 1;
+            var attemptsCount = 7;    
             var counter = 0;
-            while (true) {
+            
+            while (attempt < attemptsCount) {
                 counter++;
-                var userAnswer = prompt("Введите число от 0 до 100," +
+                var userAnswer = prompt("Введите число от 0 до 100, у вас 7 попыток. Попытка № " + attempt +
                       "\nЕсли захотите выйти нажмите q.");
                 if(userAnswer == "q"){
                     break;
                 }
-
                 userAnswer = parseInt(userAnswer);
                 
                 if(userAnswer > answer) {
@@ -28,9 +30,11 @@
                 }else{
                     alert("Введите число");
                 }
-
-                alert("Вы огадали с " + counter + "попытки.");
-           } 
+                attempt++;                       
+            }
+            if(attempt > attemptCount) {   
+                alert("К сожалению вы не отгадали. Было задано число: " + answer ); 
+            }
         </script>
     </body>
 </html>
